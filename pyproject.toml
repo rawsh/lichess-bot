@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lichess-bot"
+version = "0.1.0"
+description = ""
+authors = ["Robert Washbourne <rawashbourne@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+chess = "1.10.0"
+pyyaml = "6.0.2"
+requests = "2.32.3"
+backoff = "2.2.1"
+rich = "13.7.1"
+openai = "^1.42.0"
+python-dotenv = "^1.0.1"
+dspy = "^0.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
