@@ -57,6 +57,6 @@ class ChessEngine(dspy.Module):
         return dspy.Prediction(pgn=pgn, answer=gen_move, move=move, board=board, valid=valid)
 
 def load_optimized_engine(compiled_prompt="compiled_chess_cot.dspy"):
-    program_with_assertions = ChessEngine().activate_assertions(max_backtracks=4)
+    program_with_assertions = ChessEngine().activate_assertions(max_backtracks=2)
     program_with_assertions.load(compiled_prompt)
     return program_with_assertions

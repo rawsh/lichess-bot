@@ -136,20 +136,20 @@ class RawBot(ExampleEngine):
             res = []
             # for i in range(3):
             result = program(pgn=pgn)
-            print(result.board)
-            result.board.push(result.move)
-            print("after\n",result.board)
-            nwinfo = self.engine.analyse(result.board,chess.engine.Limit(depth=20))
-            print(nwinfo, result)
+            # print(result.board)
+            # result.board.push(result.move)
+            # print("after\n",result.board)
+            # nwinfo = self.engine.analyse(result.board,chess.engine.Limit(depth=20))
+            # print(nwinfo, result)
             # res.append((nwinfo.get("score"), result))
 
             # print(res)
             # sorted_res = sorted(res, key=lambda x: x[0], reverse=True)
             # best_result = sorted_res[0]
 
-            print(result)
-            print(result.answer)
-            print(result.move)
+            # print(result)
+            # print(result.answer)
+            # print(result.move)
             if result.move is not None:
                 return PlayResult(result.move, None)
         except Exception as e:
